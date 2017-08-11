@@ -36,8 +36,8 @@ public:
     }
 };
 
-int main(){
-    Solution result;
-
-    result.subsetsWithDup([1, 2, 2]);
-}
+//int main(){
+//    Solution result;
+//
+//    result.subsetsWithDup([1, 2, 2]);
+//}
