@@ -1,3 +1,4 @@
+import java.util.ArrayList; 
 class Solution {
     /**
      * @param nums: A set of numbers.
@@ -16,10 +17,7 @@ class Solution {
 
         ArrayList<Integer> subset = new ArrayList<>();
         helper(nums, 0, subset, results);
-        
          return results;
-        
-        
     }
     public void helper(int[] nums, int startIndex, ArrayList<Integer> subset, ArrayList<ArrayList<Integer>> results){
         results.add(new ArrayList<Integer>(subset));
@@ -32,7 +30,16 @@ class Solution {
             subset.remove(subset.size()-1);
         }
     }
+
 }
+
+class SubsetsII {
+     public static void main(String[] nums){
+          Solution s=new Solution();
+          int[] i={1, 2, 2};
+          ArrayList<ArrayList<Integer>> a=s.subsetsWithDup(i);
+     }
+ }
 
 
 // class SubsetsII extends Solution{
@@ -43,4 +50,5 @@ class Solution {
 //     }
 
 // }
+
 
